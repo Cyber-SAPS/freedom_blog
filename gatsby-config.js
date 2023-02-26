@@ -1,4 +1,11 @@
+// Website metadata configuration
+const siteMetadata = {
+    title: "Freedom Blog",
+    description: "Blog to promote freedom of expression"
+};
+
 module.exports = {
+    siteMetadata,
     plugins: [`gatsby-plugin-mdx`,
         {
             resolve: `gatsby-source-filesystem`,
