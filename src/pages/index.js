@@ -12,10 +12,12 @@ export default function IndexPage({data}){
     return(
         <Layout>
             {data.allMdx.nodes.map(({id, excerpt, frontmatter:{title, date, slug}})=>{
+            
                 return(
                     <Box key={id} as="article" sx={{mb:4, p:3, boxShadow:"0 10px 15px -3px rgba()0,0,0,0.1", border: "1px solid #d1d1d1", borderRadius:"15px"}}>
                         {/* {excerpt} */}
-                        <Link as={GatsbyLink} to={`/${slug}`}>
+                     
+                        <Link as={GatsbyLink} to={`/blog${slug}`}>
                             <Heading>{title}</Heading>
                             <Box as="p" variant="style.p">{date}</Box>
                         </Link>
@@ -35,7 +37,7 @@ export const query = graphql`
                 frontmatter{
                     slug
                     title
-                    date
+                    date(formatString:"MMM Do YYYY")
                 }
             }
         }
