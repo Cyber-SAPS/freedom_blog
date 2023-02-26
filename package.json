@@ -1,0 +1,17 @@
+{
+  "name": "freedom_blog",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "gatsby": "^5.7.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "build": "gastby build",
+    "dev":"gatsby develop -p 3000 -o",
+    "serve":"gatsby serve -p 3001 -o",
+    "clean":"gatsby clean"
+  }
+}
