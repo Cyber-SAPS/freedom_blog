@@ -10,6 +10,11 @@ export const useSiteMetadata =()=> {
                 siteMetadata{
                     title
                     description
+                    lastBuildDate
+                    siteUrl
+                    authorName
+                    siteLanguage
+                    siteLocale
                 }
                 }
             }

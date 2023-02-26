@@ -1,12 +1,18 @@
 // Website metadata configuration
 const siteMetadata = {
     title: "Freedom Blog",
-    description: "Blog to promote freedom of expression"
+    description: "Blog to promote freedom of expression",
+    lastBuildDate: new Date(Date.now()).toISOString(),
+    siteUrl: `http://localhost:8000`,
+    authorName: `Daryl Evans`,
+    siteLanguage: `en-GB`,
+    siteLocale: `en_gb`,
 };
 
 module.exports = {
     siteMetadata,
     plugins: [
+        'gatsby-plugin-react-helmet',
         'gatsby-plugin-theme-ui',
         `gatsby-plugin-image`,
         `gatsby-plugin-sharp`,

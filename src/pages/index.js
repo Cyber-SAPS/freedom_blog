@@ -3,14 +3,13 @@ import * as React from 'react'
 import { Link as GatsbyLink } from 'gatsby'
 import { Box, Heading, Link } from 'theme-ui'
 import { Layout } from '../components/layout';
-// import { useSiteMetadata } from '../hooks/use-site-metadata'
 
 
 export default function IndexPage({data}){
-    // const { title, description } = useSiteMetadata();
 
     return(
         <Layout>
+
             {data.allMdx.nodes.map(({id, excerpt, frontmatter:{title, date, slug}})=>{
             
                 return(
