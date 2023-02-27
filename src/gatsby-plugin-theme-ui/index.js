@@ -16,7 +16,9 @@ const theme = {
             fontFamily: "body",
             fontWeight: "body",
             lineHeight: "body",
-            fontSize: 3
+            fontSize: 3,
+            marginBottom: "1rem",
+            marginTop: "1.5rem"
         },
     },
 };

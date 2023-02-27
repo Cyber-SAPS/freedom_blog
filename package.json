@@ -23,7 +23,7 @@
     "theme-ui": "^0.15.5"
   },
   "scripts": {
-    "build": "gastby build",
+    "build": "gatsby build",
     "dev": "gatsby develop -p 3000 -o",
     "serve": "gatsby serve -p 3001 -o",
     "clean": "gatsby clean"

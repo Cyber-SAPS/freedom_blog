@@ -15,7 +15,6 @@ module.exports = {
         'gatsby-plugin-react-helmet',
         'gatsby-plugin-theme-ui',
         `gatsby-plugin-image`,
-        `gatsby-plugin-sharp`,
         `gatsby-transformer-sharp`,
         {
         resolve: `gatsby-plugin-mdx`,
@@ -24,7 +23,7 @@ module.exports = {
             {
                 resolve: `gatsby-remark-images`,
                 options: {
-                maxWidth: 640,
+                maxWidth: 800,
                 },
             },
             ],
@@ -42,6 +41,47 @@ module.exports = {
                 name: "content",
                 path: `${__dirname}/content/`
             },
+        },
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                name: "images",
+                path: `${__dirname}/src/images/`
+            },
+        }, 
+        {
+            resolve: 'gatsby-source-filesystem',
+            options: {
+              "name": "pages",
+              "path": `${__dirname}/src/pages/`
+            },
+            __key: "pages"
+        },
+        {
+            resolve: 'gatsby-source-filesystem',
+            options: {
+              "name": "styles",
+              "path": `${__dirname}/src/styles/`
+            },
+            __key: "styles"
+        },
+        {
+            resolve: `gatsby-plugin-sharp`,
+            options: {
+              defaults: {
+                formats: [`auto`, `webp`],
+                placeholder: `blurred`,
+                quality: 70,
+                breakpoints: [750, 1080, 1366, 1920],
+                backgroundColor: `transparent`,
+                tracedSVGOptions: {},
+                blurredOptions: {},
+                jpgOptions: {},
+                pngOptions: {},
+                webpOptions: {},
+                avifOptions: {},
+              }
+            }
         },
     ],
 };
