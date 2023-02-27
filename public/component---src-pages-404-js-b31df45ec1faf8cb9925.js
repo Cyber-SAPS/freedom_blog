@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkfreedom_blog=self.webpackChunkfreedom_blog||[]).push([[883],{429:function(e,t,n){n.r(t),n.d(t,{default:function(){return l}});var a=n(7294),r=n(795);function l(){return a.createElement(a.Fragment,null,a.createElement(r.X6,{variant:"styles.h1"},"Page not found!",a.createElement("span",{role:"img","aria-label":"crying face"},"😢")),a.createElement(r.xu,{as:"h2",variant:"styles.h2"},"It looks like that page doesn't exist"))}}}]);
+//# sourceMappingURL=component---src-pages-404-js-b31df45ec1faf8cb9925.js.map

@@ -3,7 +3,7 @@
 node_modules
 
 #Build directory
-public
+# public
 
 #Other
 .DS_Store
