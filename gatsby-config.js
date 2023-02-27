@@ -10,6 +10,7 @@ const siteMetadata = {
 };
 
 module.exports = {
+    pathPrefix: "/freedom_blog",
     siteMetadata,
     plugins: [
         'gatsby-plugin-react-helmet',
